@@ -1,3 +1,10 @@
 <div id="body"></div>
 <script src="https://cdn.jsdelivr.net/gh/SH20RAJ/WebScrapperJS/WebScrapper.min.js" ></script>
 <script src="https://cdns.sh20raj.repl.co/jscloneofgithub/main.js"></script>
+<script>
+  var url = "https://github.com"+location.pathname+''+location.search;
+  document.write(WebScrapper.get(url)) ;
+  
+  function getparam(a,e){return e||(e=window.location.href),new URL(e).searchParams.get(a)}
+  
+</script>
